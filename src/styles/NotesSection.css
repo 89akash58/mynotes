@@ -1,0 +1,62 @@
+
+.container {
+    width: 30%;
+    position: relative;
+    border-radius: 5px ;
+    
+}
+
+.heading {
+    font-family: var(--font-family-roboto);
+    text-align: center;
+}
+
+.create-notes>button {
+    cursor: pointer;
+    border: none;
+    background-color:rgba(22, 0, 139, 1);
+    border-radius: 50%;
+    color: white;
+    padding: 10px;
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    
+}
+
+.plus-btn {
+    font-size: 40px;
+}
+
+.create-notes>div {
+    position: relative;
+    top: 10;
+    margin-left: 1rem;
+    overflow: auto;
+}
+
+
+.notes>span {
+    text-transform: uppercase;
+    padding: 12px;
+    margin-right: 1rem;
+    color: white;
+    border-radius: 50%;
+    font-family: var(--font-family-roboto);
+    font-size: 20px;
+}
+
+.notes>strong {
+    font-family: var(--font-family-roboto);
+    letter-spacing: 0.4px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:786px) {
+    .container {
+        width: 100%;
+    }
+}

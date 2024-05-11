@@ -1,0 +1,133 @@
+.textarea-section-container {
+    height: 100vh;
+    width: 70vw;
+    background-color: rgba(218, 229, 245, 1);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.notes{
+   display: flex;
+   align-items: center;
+   border-radius: 10px;
+    cursor: pointer;
+    .head{
+        background-color: #001F8B;
+        height: 50px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        span{
+            color:white;
+            text-transform: uppercase;
+            border-radius: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+        strong{
+            color: white;
+        }
+    }
+    .textarea-notes{
+        background-color: #001F8B;
+    }
+}
+.display-texts {
+    display: "flex"; 
+    flex-direction: "column";
+    border-radius: 5px;
+    gap: 50px;
+    padding: 1rem;
+    margin-top: 2px;
+    height: 50vh;
+    overflow: auto;
+   
+}
+
+.left-arrow {
+    cursor: pointer;
+    display: none;
+    margin-right: 10px;
+    filter: brightness(100);
+    margin-left: 10px;
+}
+
+.time-date {
+    font-family: var(--font-family-roboto);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    display: flex;
+    bottom: 0;
+    right: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+.text-message{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+}
+
+.para {
+    font-family: var(--font-family-roboto);
+    line-height: 20px;
+    letter-spacing: 0.63px;
+}
+
+.textarea-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    background-color: #001F8B;
+    height: 40%;
+    margin-top: 0;
+}
+textarea {
+    font-family: var(--font-family-roboto);
+    font-size: 1.3rem;
+    letter-spacing: 0.6px;
+    padding: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+    width: 65vw;
+    height: 25vh;
+   
+}
+.rightarrow {
+    cursor: pointer;
+    position: absolute;
+     bottom: 60px;
+    right: 60px;
+    height: 18px;
+}
+.rightarrow.enabled {
+    filter: hue-rotate(120deg) brightness(0.0);
+    translate: scale(1.1);
+  }
+.rightarrow.disabled{
+    cursor: not-allowed;
+}
+
+
+@media screen and (max-width:786px) {
+    .textarea-section-container {
+        width: 100vw;
+        position: absolute;
+        top: 0;
+    }
+    .display-texts{
+        height: 50vh;
+    }
+    .textarea-notes{
+        background-color: #001F8B;
+    }
+    .left-arrow {
+        display: flex;
+        color: white;
+    }
+}

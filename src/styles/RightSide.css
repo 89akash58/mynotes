@@ -1,0 +1,47 @@
+.p1{
+    font-family: 'Roboto', sans-serif;
+}
+
+.newDiv{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    .lockImage{
+        height: 20px;
+        padding: 15px;
+    }
+    .p3{
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+.grpImage{
+    height: 250px;
+}
+.p2,.p4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+.p2{
+    margin-bottom:3px ;
+}
+.p3{
+    font-family: 'Roboto', sans-serif;
+}
+.rightSide{
+    
+        width: 70vw;
+        background-color:rgba(218, 229, 245, 1);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+}
+ 
+@media screen and (max-width:786px){
+    .rightSide{
+        display: none;
+    }
+}
